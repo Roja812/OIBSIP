@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="temperature-converter">
+            <div class="mobile">
+                <p>9.30 AM</p>
+                <div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAuUlEQVRIS2NkoDNgpLN9DKMWUj3ER4N0UAdpAdB1AkB8AIqxOpaacXgfaIMCEE8A4kJcQTNqIa6QmQ+UcIDGVSJUEU2DdD3QkgCohY5D3kJQygPhD0B8AeobmvqwAWhJPRA/AGLFUQtJzfigpB4PDTZQaQGKN5oGaQLQAlAeAwHBUQupkfGHf5CCShRQSgWBBVDaAEiDMCjFboCKgdSA1CKLgcpWUAX8ABrUUKWoFDXrQ6wWoAvS3UIAYSdjHWLXxtoAAAAASUVORK5CYII="/> 
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAB/0lEQVRIS+2Uy00DQRBE7QwIgTsHIAJMBOAIMBIfcQJHgIgAOCE+EksEmAiwIwAOnFkyIATqrbqt8TDLjm3JB0RLLY93eqqqa3q33VpwtBfM1/onrHN8SRtkOe2V5FgKcEe5o1y25FkYEL8qR8pC+VUn5DdCSM5rCJoaG6rgwcgnalOEEB0rtyNUOgDo0zqgCzqla2JLuRadoX5XWfrzmPBEG6cGRA2gl8qBEsKmQEBPiWAXwpm+8oKFE1IIEYROdKZFYaRORAcA+dAgqDQx8b2BxZV4QNh3QkBeDIhOugZEMSTYm7IswKvcQCCOIIJA2LNhsN8NLQWYLvGcTURgTc8OhuBNa4hxyInvtX5SDuqmtKPNx4AIAUM7xC//3UKEIRYHEBcGTnH/40gRcgjvscOHpgjURpg//sZ3h2OcryJF6L6jnOIJhSaEjkjum4wHhj0c4vlmuF9nqU9hacL4z/0yPAiJwweG8ffgDDEhJufT1tEhLEZ1U9AtwxK7Mj7XRIjKD6WrLbTmk4VqwOk2Hhj21pVlSl0TIWcA5F1K3WeISR3jP1eHdRYyCEfKKxPTZHW2pSmgAz28DjYOtb7JZcyxNMbi7laDh29mexbnLIS3Qt4L0O+03s9iU9EshEwgr8mGcqTk3ePDnxWzEDrwihbvWSxB0TyE03JV9X+f8BsPDmZd/Ms9bAAAAABJRU5ErkJggg=="/>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAsElEQVRIS2NkoDNgpLN9DKMWUj3ER16QOgDDMB6IFSgMyw9A/Q+AuBGIQWw4QA5SkGXrgViAQsuQtYMsVcRlYQFQop+KlsGMAlkIshgMkH0IsgxkKbWBIdDAC8PaQlCiAeGFQNxAjyCFheYCICNx1EJqpFhYxt9AryAd/tkCZ0ljAAzj89SINCQzQCUMKEjhAL0+DADK5FPJUlBiKQTiB/gspJJduI0ZeTX+aJBSHAIA2o0kHYT19MAAAAAASUVORK5CYII="/>
+                </div>
+            </div>
+            <h2 class="title">Temperature Converter</h2>
+            <div class="result">
+                <span class="result-heading">Result(Celsius)</span>
+                <h2 class="celsius-value" id="celsius">1</h2>
+            </div>
+
+            <div class="degree-type">
+                    <div class="degree-field">
+                        <label for="degree">Degree</label>
+                        <input type="number" name="degree" id="degree">
+                    </div>
+                    <div class="temp-field">
+                        <label for="temp-type">Type</label>
+                        <select name="temperature" id="temp-type">
+                            <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
+                            <option value="kelvin" id="kelvin">Kelvin</option>
+                        </select>
+                    </div>
+            </div>
+            <button  id="convert-button">Convert</button>
+        </div>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>
